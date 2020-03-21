@@ -1,0 +1,95 @@
+{
+    "gitbook": "2.6.9",
+    "structure": {
+        "readme": "README.md"
+    },
+    "title": "uip",
+    "links": {
+        "sidebar": {
+            "GitHub Project": "https://github.com/Myriad-Dreamin/uip-wiki"
+        }
+    },
+    "plugins": [
+        "github",
+        "github-edit",
+        "sharing",
+        "ga",
+        "advanced-emoji",
+        "comments-footer",
+        "page-footer",
+        "page-treeview",
+        "resources",
+        "theme-aleen42",
+        "mathjax",
+        "mind-maps"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/Myriad-Dreamin/uip-wiki"
+        },
+        "github-edit": {
+            "repo": "Myriad-Dreamin/uip-wiki",
+            "branch": "master"
+        },
+        "sharing": {
+            "facebook": false,
+            "twitter": true,
+            "google": true,
+            "weibo": true,
+            "instapaper": false,
+            "vk": true,
+            "all": [
+                "facebook",
+                "google",
+                "twitter",
+                "weibo",
+                "instapaper",
+                "vk"
+            ]
+        },
+        "ga": {
+            "token": "UA-75457732-1",
+            "configuration": "auto"
+        },
+        "injection": {
+            "js": [
+                "src/index.js"
+            ]
+        },
+        "advanced-emoji": {
+            "embedEmojis": true
+        },
+        "page-footer": {
+            "isShowIssues": true,
+            "wisdom": "More than a coder, more than a designer",
+            "copyright": "Copyright © Myriad Dreamin",
+            "style": "symmetrical",
+            "repo": "Myriad-Dreamin/uip-wiki",
+            "issueNum": "20",
+            "isShowQRCode": true,
+            "timeColor": "#a10000",
+            "utcOffset": "8",
+            "format": "yyyy-MM-dd hh:mm:ss",
+            "signature": "Aleen",
+            "baseUri": "https://github.com/Myriad-Dreamin/uip-wiki",
+            "copyrightColor": "#666",
+            "description": "update time:"
+        },
+        "page-treeview": {
+            "copyright": "Copyright © Myriad Dreamin",
+            "style": "markdown",
+            "minHeaderCount": "2",
+            "minHeaderDeep": "2"
+        },
+        "resources": {
+            "type": "github",
+            "repo": "Myriad-Dreamin/uip-wiki",
+            "branch": "docs"
+        },
+        "comments-footer": {
+            "type": "github",
+            "repo": "Myriad-Dreamin/uip-wiki",
+            "redirect": "https://github.com/Myriad-Dreamin/uip-wiki"
+        }
+    }
+}
