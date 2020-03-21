@@ -1,6 +1,12 @@
 
 ## ubuntu下配置QEMU相关的Visual Studio Code环境
 
+author: [Myriad-Dreamin](https://github.com/Myriad-Dreamin)
+
+---
+
+#### 添加include路径
+
 创建`.vscode/c_cpp_properties.json`，并写入下面的内容：
 
 ```json
@@ -31,3 +37,42 @@
 ```
 
 这样阅读源码的时候暂时就不会报错了，如果还有其他错误，到时再修复。
+
+#### 添加debug配置
+
+创建`.vscode/launch.json`，并写入下面内容：
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "QEMU x86_64 Linux",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "x86_64",
+            "program": "${workspaceRoot}/bin/qemu-system-x86_64d",
+            "args": [
+                "-kernel",
+                "${workspaceRoot}/work/linux/bzImage",
+                "-initrd",
+                "${workspaceRoot}/work/linux/.config",
+                "-smp",
+                "2",
+                "-gdb",
+                "tcp::1234",
+                "-S"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}",
+            "externalConsole": true
+        }
+    ]
+}
+```
+
+`${workspaceRoot}/bin/qemu-system-x86_64d`填编译好的qemu二进制文件路径。
+
+`args`填给`qemu`的参数，这里启动的是编译好的linux内核。
+
+按`ctrl+shift+D`选择`QEMU x86_64 Linux`任务运行程序。
