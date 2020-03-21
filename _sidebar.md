@@ -3,7 +3,7 @@
     * [分析bellard-05](/analysis/paper.md)
     * [分析vl.c#main的行为](/analysis/vl-c-main.md)
 * [§2 模块分析](modules/pre.md)
-    <!-- * [§2.1](modules/.md) -->
+    * [util库](modules/util.md)
 * [参考](reference/pre.md)
     * [快速开始](reference/start.md)
     * [halloweenwx-02](reference/halloweenwx-02.md)
