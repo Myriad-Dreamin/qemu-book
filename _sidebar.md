@@ -11,6 +11,8 @@
     * [安装QEMU](reference/installation-02.md)
     * [关于docsify的配置](reference/docsify.md)
     * [配置VSCode环境](reference/vscode-config.md)
+    * [配置git](reference/git-config.md)
     * [ATC-05 翻译](reference/paper_cn.md)
     * [引用链接](reference/links.md)
     
+

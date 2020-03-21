@@ -6,9 +6,10 @@
 * [安装QEMU](reference/installation-02.md)
 * [halloweenwx-02](reference/halloweenwx-02.md)
 * [ubuntu下配置QEMU相关的Visual Studio Code环境](reference/vscode-config.md)
-
+* [ubuntu中git的配置](reference/git-config.md)
 * [关于docsify的配置](reference/docsify.md)
 
 
 * [引用链接](reference/links.md)
 * [QEMU, a Fast and Portable Dynamic Translator-Fabrice Bellard 翻译](reference/paper_cn.md)
+
