@@ -2,7 +2,7 @@
 
 实现了`include/qemu/error-report.h`
 
-#### Location类
+#### Location
 
 定义如下
 
@@ -119,5 +119,60 @@ void error_init(const char *argv0)
 extern bool enable_timestamp_msg;
 ```
 
+### qemu-option.c
 
+#### QemuOpts/QemuOpt/QemuOptsList
 
+```c
+enum QemuOptType {
+    QEMU_OPT_STRING = 0,  /* no parsing (use string as-is)                        */
+    QEMU_OPT_BOOL,        /* on/off                                               */
+    QEMU_OPT_NUMBER,      /* simple number                                        */
+    QEMU_OPT_SIZE,        /* size, accepts (K)ilo, (M)ega, (G)iga, (T)era postfix */
+};
+
+typedef struct QemuOptDesc {
+    const char *name;
+    enum QemuOptType type;
+    const char *help;
+    const char *def_value_str;
+} QemuOptDesc;
+
+struct QemuOptsList {
+    const char *name;
+    const char *implied_opt_name;
+    bool merge_lists;  /* Merge multiple uses of option into a single list? */
+    QTAILQ_HEAD(, QemuOpts) head;
+    QemuOptDesc desc[];
+};
+
+struct QemuOpt {
+    char *name;
+    char *str;
+
+    const QemuOptDesc *desc;
+    union {
+        bool boolean;
+        uint64_t uint;
+    } value;
+
+    QemuOpts     *opts;
+    QTAILQ_ENTRY(QemuOpt) next;
+};
+
+struct QemuOpts {
+    char *id;
+    QemuOptsList *list;
+    Location loc;
+    QTAILQ_HEAD(, QemuOpt) head;
+    QTAILQ_ENTRY(QemuOpts) next;
+};
+```
+
+```c
+const char *qemu_opt_get(QemuOpts *opts, const char *name)
+```
+
+###### `const char *qemu_opt_get(QemuOpts *opts, const char *name)`
+
+根据`option`名字寻找`option`的值，如果没有该值，返回`opts`记录的默认值，如果都没有返回`NULL`

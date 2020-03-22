@@ -4,6 +4,7 @@
     * [分析vl.c#main的行为](/analysis/vl-c-main.md)
 * [§2 模块分析](modules/pre.md)
     * [util库](modules/util.md)
+    * [replay模块](modules/replay.md)
 * [参考](reference/pre.md)
     * 安装
         * [快速开始](reference/start.md)
