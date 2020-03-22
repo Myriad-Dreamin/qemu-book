@@ -5,14 +5,18 @@
 * [§2 模块分析](modules/pre.md)
     * [util库](modules/util.md)
 * [参考](reference/pre.md)
-    * [快速开始](reference/start.md)
-    * [halloweenwx-02](reference/halloweenwx-02.md)
-    * [介绍、安装与使用](reference/installation.md)
-    * [安装QEMU](reference/installation-02.md)
-    * [关于docsify的配置](reference/docsify.md)
-    * [配置VSCode环境](reference/vscode-config.md)
-    * [配置git](reference/git-config.md)
-    * [ATC-05 翻译](reference/paper_cn.md)
-    * [引用链接](reference/links.md)
-    
+    * 安装
+        * [快速开始](reference/start.md)
+        * [halloweenwx-02](reference/halloweenwx-02.md)
+        * [介绍、安装与使用](reference/installation.md)
+        * [安装QEMU](reference/installation-02.md)
+    * 配置
+        * [关于docsify的配置](reference/docsify.md)
+        * [配置VSCode环境](reference/vscode-config.md)
+        * [配置git](reference/git-config.md)
+    * 文档
+        * [ATC-05 翻译](reference/paper_cn.md)
+        * [QEMU Replay Feature翻译](reference/replay.md)
+        * [Glib2.0文档](glib.md)
+        * [其他](reference/links.md)
 
