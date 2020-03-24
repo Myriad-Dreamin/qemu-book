@@ -5,8 +5,9 @@
 * [§2 模块分析](modules/pre.md)
     * [util库](modules/util.md)
     * [replay模块](modules/replay.md)
-    * [exec.c/exec-vary.c]((modules/exec.md))
+    * [exec.c/exec-vary.c](modules/exec.md)
     * [部分memory模块](modules/memory.md)
+    * [migration模块的初始化函数](modules/migration.md)
 * [参考](reference/pre.md)
     * 安装
         * [快速开始](reference/start.md)

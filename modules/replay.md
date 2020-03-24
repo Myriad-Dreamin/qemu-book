@@ -180,7 +180,7 @@ opts为空时，此函数无效。
 + `rrfile`
   + 必要，指定了replay日志的文件。
 
-随后调用`replay_vmstate_register`和`replay_enable`。在这个版本中`replay_vmstate_register`没有任何用处。`replay_enable`会：
+随后调用`replay_vmstate_register`和`replay_enable`。`replay_vmstate_register`与热迁移相关。`replay_enable`会：
 
 + 注册离开程序时的回调函数`replay_finish`
 + 初始化`replay_file`、`replay_mutex`、`replay_state`
