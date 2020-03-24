@@ -14,6 +14,7 @@
     * 配置
         * [关于docsify的配置](reference/docsify.md)
         * [配置VSCode环境](reference/vscode-config.md)
+        * [配置Clion环境](reference/clion-config.md)
         * [配置git](reference/git-config.md)
     * 文档
         * [ATC-05 翻译](reference/paper_cn.md)

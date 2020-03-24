@@ -9,6 +9,7 @@
 
 #### 配置
 * [ubuntu下配置QEMU相关的Visual Studio Code环境](reference/vscode-config.md)
+* [ubuntu下配置QEMU相关的Clion环境](reference/clion-config.md)
 * [ubuntu中git的配置](reference/git-config.md)
 * [关于docsify的配置](reference/docsify.md)
 
