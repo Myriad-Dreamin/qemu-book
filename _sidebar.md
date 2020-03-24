@@ -5,6 +5,8 @@
     * [分析vl.c#main_loop](analysis/vl-c-main_loop.md)
 * [§2 模块分析](modules/pre.md)
     * [util库](modules/util.md)
+    * [hw/core库](modules/hw-core/pre.md)
+      * [machine模块](modules/hw-core/machine.md)
     * [replay模块](modules/replay.md)
     * [exec.c/exec-vary.c](modules/exec.md)
     * [部分memory模块](modules/memory.md)
