@@ -29,3 +29,4 @@
         * [Glib2.0文档](glib.md)
         * [其他](reference/links.md)
 
++ [统计](statistic/code-count.md)
