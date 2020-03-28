@@ -6,9 +6,7 @@
 
 该函数只能被调用一次。首先初始化文件的全局变量`current_migration`和`current_incoming`，这两个对象都需要保证线程安全。所谓迁移，`current_incoming`即是源，`current_migration`是过程控制器，当前线程是目标。
 
-初始化了`finish_lock`。
-
-初始化了`block_mig_state`
+初始化了变量`finish_lock`和`block_mig_state`
 
 ### block.c
 
