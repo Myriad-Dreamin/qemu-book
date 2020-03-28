@@ -17,3 +17,10 @@ if (machine->numa_state->num_nodes) {
 
 当调用`x86_cpus_init`时，会调用需要虚拟化的CPU核数次`x86_cpu_new`(`/hw/i386/x86.c#86`)，而在`x86_cpu_new`中`cpu`类的`realized`属性的`setter`，也就是`/hw/core/qdev.c`的`device_set_realized`会被触发，在这里`cpu`设备被实例化。
 
+```c
+qemu_tcg_init_vcpu cpus.c:2008
+qemu_init_vcpu cpus.c:2141
+x86_cpu_realizefn cpu.c:6499
+device_set_realized qdev.c:876
+```
+
