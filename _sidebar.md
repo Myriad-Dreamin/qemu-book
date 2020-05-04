@@ -7,6 +7,7 @@
     * [分析cpus.c](analysis/cpus.md)
     * [分析trace机制](analysis/trace.md)
     * [QEMU中的backend](analysis/backends.md)
+    * [分析riscv target代码](analysis/target-riscv.md)
 * [§2 模块分析](modules/pre.md)
     * [util库](modules/util/pre.md)
       * [Location](modules/util/location.md)

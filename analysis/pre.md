@@ -8,3 +8,4 @@
 * [分析cpus.c](analysis/cpus.md)
 * [分析trace机制](analysis/trace.md)
 * [QEMU中的backend](analysis/backends.md)
+* [分析riscv target代码](analysis/target-riscv.md)
